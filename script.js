@@ -6,12 +6,16 @@ const btnContar = document.querySelector("[btn-contar]")
 let modo = "caracteres"
 
 
-function handleInputTexto(evento){
-    console.log(inputTexto.value)
-    console.log(evento.target.value)
+function handleInputTexto(){
+    if (modo == "caracteres"){
+
+    } else {
+
+        
+    }
 }
 
-function handleBtnContar(evento){
+function handleBtnContar(){
     if (modo === "caracteres"){
         modo = "palavras"
         btnContar.innerText = "Contar Palavras"
