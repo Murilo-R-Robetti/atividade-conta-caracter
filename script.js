@@ -8,14 +8,15 @@ let modo = "caracteres"
 
 function handleInputTexto(){
     if (modo == "caracteres"){
+        divContador.innerText = inputTexto.value.length + " Caracteres"
+        // console.log(inputTexto.value.length)
 
     } else {
 
-        
     }
 }
 
-function handleBtnContar(){
+function handleBtnContar(evento){
     if (modo === "caracteres"){
         modo = "palavras"
         btnContar.innerText = "Contar Palavras"
