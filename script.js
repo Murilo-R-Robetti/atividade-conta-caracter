@@ -7,12 +7,13 @@ let modo = "Caracteres"
 
 
 function handleInputTexto(evento){
+    let palavras
     if (modo == "Caracteres"){
         divContador.innerText = inputTexto.value.length + " Caracteres"
 
-    }   else {
-        const palavras = inputTexto.value.trim().split(/\s+/)
-        divContador.innerText = palavras.length + " Palavras"
+    }   else {       
+        palavras = (inputTexto.value.trim() == "" ? 0 : inputTexto.value.trim().split(/\s+/).length)
+        divContador.innerText = palavras + " Palavras"
     }
 }
 
